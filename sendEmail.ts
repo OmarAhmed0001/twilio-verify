@@ -1,7 +1,7 @@
 import mailgun from "mailgun-js";
 
-const apiKey: string = "b394ad08d29866e62f3752eb7f850d3b-31eedc68-318d0782";
-const domain: string = "taalaaa.com";
+const apiKey: string = "47c6d70e37b9701819d1631a68ad33ba-8c9e82ec-8678e4c1";
+const domain: string = "sandbox70efa1986f5447f2acf430f3c89bbcbf.mailgun.org";
 // const url = `https://api.mailgun.net/v3/${domain}/messages`;
 const mg = mailgun({ apiKey, domain });
 
@@ -41,9 +41,9 @@ const exampleSubject: string = "Hello";
 const exampleText: string = "Testing some Mailgun awesomeness!";
 
 sendEmail(exampleFrom, exampleTo, exampleSubject, exampleText)
-.then(() => {
-  console.log("Email sent successfully");
-})
-.catch((err) => {
-  console.error("Failed to send email:", err.message);
-});;
+  .then(() => {
+    console.log("Email sent successfully");
+  })
+  .catch((err) => {
+    console.error("Failed to send email:", err.message);
+  });
